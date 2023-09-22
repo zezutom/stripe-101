@@ -9,7 +9,9 @@ import com.stripe.param.ProductCreateParams
 import com.tomaszezula.stripe101.model.SubscriptionPeriod
 import com.tomaszezula.stripe101.toInterval
 import com.tomaszezula.stripe101.tryRun
+import org.springframework.stereotype.Component
 
+@Component
 class StripeClient : IStripeClient {
     override fun createProduct(name: String, description: String): Product {
         return tryRun {

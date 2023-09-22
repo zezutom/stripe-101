@@ -7,10 +7,8 @@ plugins {
     kotlin("plugin.spring") version "1.8.22"
 }
 
-group = "com.tomaszezula.stripe101"
+group = "com.example"
 version = "0.0.1-SNAPSHOT"
-
-val stripeVersion: String by extra
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -20,8 +18,10 @@ repositories {
     mavenCentral()
 }
 
+val stripeVersion: String by extra
+
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("com.stripe:stripe-java:$stripeVersion")
     testImplementation("org.springframework.boot:spring-boot-starter-test")

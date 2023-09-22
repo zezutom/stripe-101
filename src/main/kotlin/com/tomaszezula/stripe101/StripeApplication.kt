@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class StripeApplication
+class DemoApplication
 
 fun main(args: Array<String>) {
-    runApplication<StripeApplication>(*args)
+    runApplication<DemoApplication>(*args)
 }
